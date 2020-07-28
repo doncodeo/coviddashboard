@@ -1,0 +1,130 @@
+@import './variables';
+@import './mixing';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: $cmilk;
+    height: 100vh    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background:$cblack;
+    width:60%;
+    height: auto;
+}
+
+.container input{
+    padding:10px;
+    margin:20px;
+    width:80%;
+}
+
+.container .fa-search{
+    color:$cblack;
+    font-size: 20px;
+    padding:10px;
+    position: relative;
+    right:70px;
+}
+
+.dashB{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    margin:80px 0;
+}
+
+.b1{
+    @include dashboard($cblue);
+    h5{
+        @include placeholder
+    }
+    h3{
+       @include mainData
+    }
+}
+.b2{
+    @include dashboard($cgreen);
+    h5{
+        @include placeholder
+    }
+    h3{
+        @include mainData
+     }
+}
+.b3{
+    @include dashboard($cred);
+    h5{
+        @include placeholder
+    }
+    h3{
+        @include mainData
+     }
+}
+.b4{
+    @include dashboard($cblue);
+    h5{
+        @include placeholder
+    }
+    h3{
+       @include mainData
+    }
+}
+.b5{
+    @include dashboard($cgreen);
+    h5{
+        @include placeholder
+    }
+    h3{
+        @include mainData
+     }
+}
+.b6{
+    @include dashboard($cred);
+    h5{
+        @include placeholder
+    }
+    h3{
+        @include mainData
+     }
+}
+
+
+
+
+@media (max-width:692px){
+    .container .fa-search{
+        font-size: 20px;
+        padding:0px;
+        position: relative;
+        right:70px;
+    }
+}
+
+@media (max-width:425px){
+    .container .fa-search{
+        font-size: 20px;
+        padding:0px;
+        position: relative;
+        left:190px;
+        top:-50px
+    }
+    .dashB{
+        display:block;
+        width:100%;
+        margin: 0;
+    }
+}
+
+@media (max-width:320px){
+    .container .fa-search{
+        left:140px;
+    }
+}

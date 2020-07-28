@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EO | Covid-dashboard</title>
+    <script src="https://kit.fontawesome.com/8bce9b1959.js" crossorigin="anonymous"></script>
+    <script src="node_modules/fontawesome/index.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="marquee.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <input type="text" name="" id="search">
+            <i class="fas fa-search" id=""></i>
+            <!-- <i class="fas fa-spinner fa-spin fa-virus" style="color:red; font-size: 54px; position: relative;top:250px;right:350px"></i> -->
+            <div class="content">
+                <div class="simple-marquee-container">
+                    <div class="marquee-sibling">
+                        Covid-19 Global Update
+                    </div>
+                    <div class="marquee">
+                        <ul class="marquee-content-items">
+                            <li id="warning"></li>
+                            <li style="padding-right:500px;" id='globalUp'></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dashB">
+                <div id="dashB1">
+                    <div class="b1">
+                        <h5> Total Confirmed Cases</h5>
+                            <h3 id="TCC"></h3>
+                    </div>
+                    <div class="b2">
+                        <h5> Total Recovered Cases</h5>
+                        <h3 id="TRC"></h3>
+                    </div>
+                    <div class="b3">
+                        <h5> Total Confirmed Deaths </h5>
+                            <h3 id="TCD"></h3>
+                    </div>
+                </div>
+                <div id="dashB2">
+                    <div class="b4">
+                        <h5> New Confirmed Cases</h5>
+                            <h3 id="CCC"></h3>
+                    </div>
+                    <div class="b5">
+                        <h5> New Recovered Cases</h5>
+                            <h3 id="CRC"></h3>
+                    </div>
+                    <div class="b6">
+                        <h5> New Confirmed Deaths </h5>
+                            <h3 id="CCD"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <canvas id="myChart" width="400" height="100"></canvas>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="node_modules/marquee.js/package.json"></script>
+    <script src="marquee.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+
+</body>
+</html>
