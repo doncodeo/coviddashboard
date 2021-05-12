@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/doncodeo/coviddashboard#readme",
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "fontawesome": "^5.6.3",
     "jquery": "^3.5.1"
   }
